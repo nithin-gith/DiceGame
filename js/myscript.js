@@ -5,10 +5,14 @@ document.getElementsByClassName("player-name")[0].innerHTML= player_1;
 document.getElementsByClassName("player-name")[1].innerHTML= player_2;
 
 
+
 function playAgain(){
     var num1 = (Math.floor(Math.random()*6))+1;
     var num2 = (Math.floor(Math.random()*6))+1;
-    
+    var count = 0;
+    if (count >= 0){
+        document.getElementsByClassName("refresh")[0].innerHTML = "Roll Again";
+    }
     if (num1 > num2){
         document.getElementsByTagName("h1")[1].innerHTML= player_1+" Wins";
     }
