@@ -33,6 +33,14 @@ function playAgain(){
         alert("You are playing with Computer!");
         return;
     }
+    else if (player_1 == ""){
+        alert("Please Enter Player-1 Name");
+        return;
+    }
+    else if (player_2 == ""){
+        alert("Please Enter Player-2 Name");
+        return;
+    }
 
 
 
