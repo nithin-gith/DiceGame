@@ -71,9 +71,9 @@ button:hover{
     outline: none;
     text-align: center;
     height: 58px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family:'Montserrat', sans-serif ;
     color:#F4BEEE ;
-    width: 190px;
+    width: 180px;
     border-radius: 25px;
 }
