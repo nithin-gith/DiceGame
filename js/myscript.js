@@ -1,12 +1,41 @@
-var player_1 = prompt("Enter Name of Player-1");
-var player_2 = prompt("Enter Name of Player-2");
+// var player_1 = prompt("Enter Name of Player-1");
+// var player_2 = prompt("Enter Name of Player-2");
 
-document.getElementsByClassName("player-name")[0].innerHTML= player_1;
-document.getElementsByClassName("player-name")[1].innerHTML= player_2;
+
+
+function disappear(i){
+    if (i==0){
+        document.getElementsByClassName("text-box")[0].value= "";
+    }
+    if (i==1){
+        document.getElementsByClassName("text-box")[1].value= "";
+    }
+}
+    
 
 
 
 function playAgain(){
+    var player_1 = document.getElementsByClassName("text-box")[0].value;
+    var player_2 = document.getElementsByClassName("text-box")[1].value;
+
+    if (player_1 == "Enter Name" && player_2 == "Enter Name"){
+        alert("Please Enter Players Names");
+        return;
+    }
+    else if (player_1 == "Enter Name" && player_2 != "Enter Name"){
+        document.getElementsByClassName("text-box")[0].value= "Computer";
+        alert("You are playing with Computer!");
+        return;
+    }
+    else if (player_2 == "Enter Name" && player_1 != "Enter Name"){
+        document.getElementsByClassName("text-box")[1].value= "Computer";
+        alert("You are playing with Computer!");
+        return;
+    }
+
+
+
     var num1 = (Math.floor(Math.random()*6))+1;
     var num2 = (Math.floor(Math.random()*6))+1;
     var count = 0;

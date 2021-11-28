@@ -46,7 +46,7 @@ ul{
     color: #D47AE8;
     margin-top:3rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 img{
     max-width: 10rem;
@@ -63,4 +63,17 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+.text-box{
+    border: none;
+    background-color: #D47AE8;
+    resize: none;
+    outline: none;
+    text-align: center;
+    height: 58px;
+    font-size: 2rem;
+    font-family:'Montserrat', sans-serif ;
+    color:#F4BEEE ;
+    width: 190px;
+    border-radius: 25px;
 }
